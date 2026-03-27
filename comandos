@@ -1,0 +1,3 @@
+texto = "Hola Mundo"
+mayusculas = texto.upper()
+print(mayusculas)  # Resultado: HOLA MUNDO
