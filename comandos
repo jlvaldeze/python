@@ -1,3 +1,38 @@
 texto = "Hola Mundo"
 mayusculas = texto.upper()
 print(mayusculas)  # Resultado: HOLA MUNDO
+
+1. Importación y Carga de Datos (Pandas) 
+
+    import pandas as pd: Importa la biblioteca principal para manejo de datos.
+    pd.read_csv('archivo.csv'): Carga datos desde un archivo CSV.
+    pd.read_excel('archivo.xlsx'): Carga datos desde Excel. 
+
+2. Exploración y Visualización Inicial
+
+    df.head(n): Muestra las primeras
+    filas (por defecto 5).
+    df.info(): Proporciona información sobre tipos de datos, columnas y valores nulos.
+    df.describe(): Ofrece estadísticas descriptivas de las columnas numéricas.
+    df.shape: Devuelve una tupla con el número de filas y columnas. 
+
+3. Selección y Filtrado de Datos
+
+    df['columna']: Selecciona una columna específica.
+    df.loc[]: Selecciona datos por etiquetas (filas y columnas).
+    df.iloc[]: Selecciona datos por posición entera (índices).
+    df[df['columna'] > valor]: Filtra filas según una condición booleana. 
+
+4. Limpieza y Manipulación de Datos
+
+    df.dropna(): Elimina filas con valores nulos (NaN).
+    df.fillna(valor): Rellena los valores nulos con un valor específico.
+    df.drop(['columna'], axis=1): Elimina una columna específica.
+    df.rename(columns={'viejo':'nuevo'}): Renombra columnas.
+    df['columna'].astype(tipo): Cambia el tipo de dato de una columna. 
+
+5. Agrupación y Combinación
+
+    df.groupby('columna').mean(): Agrupa datos y calcula la media, útil para resúmenes.
+    pd.merge(df1, df2, on='id'): Combina dos DataFrames basándose en una columna común.
+    df.sort_values(by='columna'): Ordena los datos según los valores de una columna. 
